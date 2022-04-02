@@ -99,6 +99,9 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-1::after,
 .link-2:hover::after {
@@ -197,6 +200,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .main-button :hover :focus {
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--hover-logo-btn-color);
 }
 /* Модальне вікно  */
@@ -221,13 +226,25 @@ img {
   min-height: 581px;
   min-width: 528px;
   background-color: #fff;
-  padding: 20px;
-  background-image: url(../images/mainecard/photo_2022-03-27\ 19.26.57.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.batoni {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 8px 8px 0 0;
+  cursor: pointer;
+}
 /* Наши преимущества */
 
 .adva-list {
@@ -374,6 +391,10 @@ img {
   background-color: #fff;
   border-radius: 50%;
   fill: var(--svg-icon-color);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover {
@@ -411,6 +432,10 @@ img {
   cursor: pointer;
 
   border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .group {
@@ -508,6 +533,12 @@ img {
   line-height: 1.62;
   cursor: pointer;
   letter-spacing: 0.03em;
+
+  transition-property: background-color;
+  transition-property: box-shadow;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   color: var(--secondary-color);
@@ -568,6 +599,9 @@ img {
 }
 .content-link {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .content-link:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
@@ -589,19 +623,24 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 20px;
+
   transform: translateY(100%);
   left: 0;
   bottom: 0;
   display: flex;
-  font-family: 'Roboto';
-  font-style: normal;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
-  transition: transform 250ms ease;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
   background: rgba(33, 150, 243, 0.9);
-  color: #e5e5e5;
+  color: var(--secondary-color);
+
+  padding: 63px 24px;
 }
 .dd {
   position: relative;
