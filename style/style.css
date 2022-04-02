@@ -208,6 +208,11 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: visible;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -216,10 +221,15 @@ img {
   min-height: 581px;
   min-width: 528px;
   background-color: #fff;
+  padding: 20px;
+  background-image: url(../images/mainecard/photo_2022-03-27\ 19.26.57.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+
+
+}
 }
 /* Наши преимущества */
 
